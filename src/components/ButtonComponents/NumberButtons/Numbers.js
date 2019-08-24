@@ -6,10 +6,11 @@ import NumberButton from "./NumberButton"
 
 //Import your array data to from the provided data file
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
 
   const [number, setNumber] = useStatre(numbers)
+  
   return (
     <div className="numbers">      
         {numbers.map((number, index) =>
