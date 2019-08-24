@@ -8,7 +8,7 @@ import OperatorButton from './OperatorButton';
 
 const Operators = (props) => {
   // STEP 2 - add the imported data to state
-  const [operator, setOperator]  useState(operators)
+  const [operator, setOperator] = seState(operators)
 
   return (
     <div className="operators">
