@@ -40,10 +40,14 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
+      <div className="Apptwo">
         <Display number={displayValue} />
-        <Numbers addNumber={addNumber} />
         <Specials clearDisplay={clearDisplay}/>
+        <Numbers addNumber={addNumber} />
+        </div>
+        <div className="Appthree">        
         <Operators addOperator={addOperator} />
+        </div>
       </div>
     </div>
   );

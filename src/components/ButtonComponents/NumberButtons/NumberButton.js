@@ -1,12 +1,14 @@
 import React from "react";
 
+
 const NumberButton = (props) => {
 
+
   return (
-    <button className="numButton"
-      oneClick={() =>
-      props.adddNumber(props.text)}>
-        {props.text}      
+    <button className = "numButton"
+      onClick={() =>
+        props.addNumber(props.text)}>
+      {props.text}
     </button>
   );
 };
