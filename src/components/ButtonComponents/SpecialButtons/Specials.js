@@ -1,5 +1,5 @@
-import React { useState } from "react";
-import { Specials } from "../../../data";
+import React, { useState } from "react";
+import { specials } from "../../../data";
 import SpecialButton from "./SpecialButton"
 //import any components needed
 
@@ -10,15 +10,17 @@ const Specials = (props) => {
 
   return (
     <div className="specials">
+
       {special.map((special, index) =>
         <SpecialButton
-        key={index}
-        text={special}
-        value={special}
-        clearDisplay={props.clearDisplay}/>
-        )}
+          key={index}
+          text={special}
+          value={special}
+          clearDisplay={props.clearDisplay}
+          />
+      )}
     </div>
   );
-};
+  };
 
 export default Specials;
