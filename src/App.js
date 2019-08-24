@@ -39,9 +39,10 @@ function App() {
   return (
     <div className="container">
       <Logo />
+      <Display number={displayValue} />
       <div className="App">
-      <div className="Apptwo">
-        <Display number={displayValue} />
+      
+      <div className="Apptwo">        
         <Specials clearDisplay={clearDisplay}/>
         <Numbers addNumber={addNumber} />
         </div>
